@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arsip Data SPPT (PBB) - Sistem informasi arsip pajak bumi dan bangunan">
+    <meta name="theme-color" content="#123b2c">
+    <title>Arsip Data SPPT (PBB)</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23123b2c'/><path d='M8 24V9h4l4 6 4-6h4v15h-4v-9l-4 5-4-5v9z' fill='white'/></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-jenis="sppt">
+    <div class="container">
+        <header class="page-header">
+            <div class="heading-copy">
+                <p class="eyebrow">ARSIP PAJAK BUMI DAN BANGUNAN</p>
+                <h1>Arsip Data SPPT</h1>
+                <p class="header-description">Pantau ringkasan dan riwayat data SPPT berdasarkan tahun dan wilayah.</p>
+            </div>
+            <nav class="tabs" aria-label="Jenis arsip">
+                <a href="index.html" class="tab active" aria-current="page">SPPT</a>
+                <a href="stts.html" class="tab">STTS</a>
+            </nav>
+        </header>
+
+        <main>
+        <section class="filters">
+            <div class="filter-group">
+                <label for="filter-tahun">Tahun:</label>
+                <select id="filter-tahun">
+                    <option value="">Pilih Tahun</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-kecamatan">Kecamatan:</label>
+                <select id="filter-kecamatan">
+                    <option value="">Semua Kecamatan</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-desa">Desa:</label>
+                <select id="filter-desa" disabled>
+                    <option value="">Semua Desa</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-cari">Cari:</label>
+                <input type="text" id="filter-cari" placeholder="Cari kecamatan atau desa...">
+            </div>
+            <button id="btn-reset" class="btn-reset" type="button">Reset filter</button>
+        </section>
+
+        <section class="cards" aria-label="Ringkasan data SPPT">
+            <div class="card">
+                <div class="card-value" id="card-buku1">0</div>
+                <div class="card-label">Buku 1</div>
+                <div class="card-desc">&lt; Rp 100.000</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="card-buku2">0</div>
+                <div class="card-label">Buku 2</div>
+                <div class="card-desc">Rp 100.000 - 500.000</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="card-buku3">0</div>
+                <div class="card-label">Buku 3</div>
+                <div class="card-desc">Rp 500.000 - 2.000.000</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="card-buku4">0</div>
+                <div class="card-label">Buku 4</div>
+                <div class="card-desc">Rp 2.000.000 - 5.000.000</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="card-buku5">0</div>
+                <div class="card-label">Buku 5</div>
+                <div class="card-desc">&gt; Rp 5.000.000</div>
+            </div>
+            <div class="card card-total">
+                <div class="card-value" id="card-total">0</div>
+                <div class="card-label">Total SPPT</div>
+                <div class="card-desc" id="card-tahun">Tahun -</div>
+            </div>
+        </section>
+
+        <section class="data-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">RINCIAN WILAYAH</p>
+                    <h2>Data SPPT per desa</h2>
+                    <p class="section-description">Jumlah SPPT dikelompokkan menurut kategori buku.</p>
+                </div>
+                <div class="export-section">
+                    <button id="btn-export" class="btn-export" type="button">Unduh Excel</button>
+                    <span id="export-status" class="export-status" role="status" aria-live="polite"></span>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th>Kecamatan</th>
+                            <th>Desa</th>
+                            <th>Buku 1</th>
+                            <th>Buku 2</th>
+                            <th>Buku 3</th>
+                            <th>Buku 4</th>
+                            <th>Buku 5</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-tbody" aria-live="polite">
+                        <tr>
+                            <td colspan="8" class="no-data">Memuat data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="legend" aria-labelledby="legend-title">
+            <div class="section-heading compact">
+                <div>
+                    <p class="section-kicker">PANDUAN</p>
+                    <h2 id="legend-title">Kategori buku</h2>
+                </div>
+            </div>
+            <ul>
+                <li><strong>Buku 1:</strong> Kurang dari Rp 100.000</li>
+                <li><strong>Buku 2:</strong> Rp 100.000 sampai Rp 500.000</li>
+                <li><strong>Buku 3:</strong> Rp 500.000 sampai Rp 2.000.000</li>
+                <li><strong>Buku 4:</strong> Rp 2.000.000 sampai Rp 5.000.000</li>
+                <li><strong>Buku 5:</strong> Di atas Rp 5.000.000</li>
+            </ul>
+        </section>
+
+        <section class="history-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">PERBANDINGAN TAHUNAN</p>
+                    <h2>Riwayat SPPT</h2>
+                    <p class="section-description">Rekap seluruh wilayah atau kecamatan yang dipilih.</p>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <table id="history-table">
+                    <thead>
+                        <tr>
+                            <th>Tahun</th>
+                            <th>Buku 1</th>
+                            <th>Buku 2</th>
+                            <th>Buku 3</th>
+                            <th>Buku 4</th>
+                            <th>Buku 5</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-tbody">
+                        <tr>
+                            <td colspan="7" class="no-data">Memuat data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        </main>
+
+        <footer>
+            <p class="footer-title">Arsip Data PBB</p>
+            <p class="footer-note">Sumber: Data internal arsip pajak bumi dan bangunan</p>
+        </footer>
+    </div>
+
+    <script src="data/data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js" 
+            onerror="document.getElementById('export-status').textContent='Export Excel tidak tersedia, periksa koneksi internet'; document.getElementById('export-status').className='export-status error';">
+    </script>
+    <script src="js/app.js"></script>
+    <script src="js/export.js"></script>
+</body>
+</html>

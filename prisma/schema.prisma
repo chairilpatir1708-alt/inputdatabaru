@@ -1,0 +1,97 @@
+// This is your Prisma schema file
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// Archive models - store document counts per year/district/village
+
+model ArsipSppt {
+  id        String   @id @default(uuid())
+  tahun     Int
+  kecamatan String
+  desa      String
+  buku1     Int      @default(0)
+  buku2     Int      @default(0)
+  buku3     Int      @default(0)
+  buku4     Int      @default(0)
+  buku5     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([tahun, kecamatan, desa])
+  @@index([tahun])
+  @@index([kecamatan])
+  @@index([desa])
+  @@map("arsip_sppt")
+}
+
+model ArsipStts {
+  id        String   @id @default(uuid())
+  tahun     Int
+  kecamatan String
+  desa      String
+  buku1     Int      @default(0)
+  buku2     Int      @default(0)
+  buku3     Int      @default(0)
+  buku4     Int      @default(0)
+  buku5     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([tahun, kecamatan, desa])
+  @@index([tahun])
+  @@index([kecamatan])
+  @@index([desa])
+  @@map("arsip_stts")
+}
+
+// Master data models - reference data for districts and villages
+
+model Kecamatan {
+  id        String   @id @default(uuid())
+  nama      String   @unique
+  urutan    Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  desas Desa[]
+
+  @@index([urutan])
+  @@map("kecamatan")
+}
+
+model Desa {
+  id          String   @id @default(uuid())
+  kecamatanId String
+  nama        String
+  urutan      Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  kecamatan Kecamatan @relation(fields: [kecamatanId], references: [id], onDelete: Cascade)
+
+  @@unique([kecamatanId, nama])
+  @@index([kecamatanId])
+  @@index([urutan])
+  @@map("desa")
+}
+
+// Authentication model
+
+model AdminUser {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("admin_user")
+}
