@@ -61,9 +61,16 @@
         
         // Populate dropdown tahun
         const tahunSet = new Set();
-        dataSource.forEach(item => tahunSet.add(item.tahun));
-        const tahunList = Array.from(tahunSet).sort((a, b) => b - a);
-        defaultYear = String(tahunList[0] || '');
+        for (let tahun = 2016; tahun <= 2026; tahun++) {
+            tahunSet.add(tahun);
+        }
+        dataSource.forEach(item => tahunSet.add(Number(item.tahun)));
+        const tahunList = Array.from(tahunSet).sort((a, b) => a - b);
+        const tahunTerbaru = dataSource.reduce(
+            (terbaru, item) => Math.max(terbaru, Number(item.tahun) || 0),
+            0
+        );
+        defaultYear = String(tahunTerbaru || '');
         if (!tahunList.some(tahun => String(tahun) === currentFilters.tahun)) {
             currentFilters.tahun = defaultYear;
         }
@@ -263,8 +270,8 @@
             groupedByYear[item.tahun].buku5 += item.buku5 || 0;
         });
 
-        // Sort descending
-        const years = Object.keys(groupedByYear).map(Number).sort((a, b) => b - a);
+        // Sort ascending
+        const years = Object.keys(groupedByYear).map(Number).sort((a, b) => a - b);
 
         if (years.length === 0) {
             const tr = document.createElement('tr');

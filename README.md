@@ -5,6 +5,7 @@ Website statis untuk melihat arsip SPPT dan STTS. Aplikasi berjalan langsung di 
 ## Fitur
 
 - Filter tahun, kecamatan, desa, dan pencarian
+- Pilihan tahun 2016–2026 diurutkan dari tahun terlama
 - Ringkasan jumlah per kategori buku
 - Unduh data yang sedang difilter ke Excel
 - Riwayat data per tahun
@@ -36,6 +37,16 @@ npx serve .
 
 4. Periksa hasilnya di `index.html` dan `stts.html`.
 
+## Deploy ke GitHub Pages
+
+1. Pastikan branch `main` berisi `index.html` di folder utama repository.
+2. Di GitHub, buka **Settings → Pages**.
+3. Pada **Build and deployment**, pilih **Deploy from a branch**.
+4. Pilih branch `main` dan folder `/(root)`, lalu klik **Save**.
+5. Setelah publikasi selesai, situs tersedia di `https://<nama-akun>.github.io/<nama-repo>/`. Halaman STTS ada di `/stts.html`.
+
+Tidak perlu build command atau custom domain. Pastikan repository bersifat publik jika menggunakan GitHub Pages gratis.
+
 ## Deploy ke Vercel
 
 Impor repository ini di Vercel dan pilih konfigurasi **Other**. Biarkan Build Command, Output Directory, dan Install Command kosong; situs dilayani sebagai file statis dari folder utama. Tidak ada variabel lingkungan atau database yang diperlukan.
@@ -57,3 +68,4 @@ tools/buat-data.js
 ## Catatan data
 
 Konten di `data/` akan tersedia untuk pengunjung situs. Jangan masukkan informasi rahasia atau data pribadi yang tidak boleh dipublikasikan. Fitur unduh Excel memuat ExcelJS dari CDN dan membutuhkan koneksi internet.
+Pilihan tahun selalu menampilkan 2016–2026. Tabel hanya menampilkan tahun yang memiliki data di CSV; tahun tanpa data tidak diberi angka rekaan.
