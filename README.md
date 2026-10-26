@@ -23,6 +23,7 @@ npx serve .
 
 1. Edit `data/sppt.csv` dan/atau `data/stts.csv`. Kolom harus tetap berurutan: `tahun,kecamatan,desa,buku1,buku2,buku3,buku4,buku5`.
 2. Pastikan kombinasi tahun, kecamatan, dan desa tidak duplikat; tahun harus 2000-2100; nilai buku harus bilangan bulat non-negatif.
+   Rekap SPPT tanpa rincian buku disimpan terpisah di `data/sppt-tahunan-tanpa-rincian-buku.csv` dan tidak ditampilkan sebagai angka per buku.
 3. Buat ulang data browser:
 
    ```bash
@@ -61,9 +62,13 @@ js/app.js        Filter, ringkasan, dan tabel
 js/export.js     Unduh Excel
 data/*.csv       Sumber data yang diedit
 data/data.js     Data browser hasil generate
+data/pemulihan-data.json
+                 Snapshot JSON untuk pemulihan data
 tools/buat-data.js
                  Generator data.js dari CSV
 ```
+
+`data/pemulihan-data.json` berisi snapshot data aplikasi SPPT/STTS, rekap tahunan tanpa rincian buku, dan rekap gabungan sementara. Perbarui snapshot ini setelah mengubah sumber data jika diperlukan untuk pemulihan terbaru.
 
 ## Catatan data
 
