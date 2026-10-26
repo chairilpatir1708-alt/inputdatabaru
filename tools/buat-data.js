@@ -1,4 +1,4 @@
-﻿// tools/buat-data.js - Script untuk generate data/data.js dari CSV
+// tools/buat-data.js - Script untuk generate data/arsip-data.json dari CSV
 // Cara pakai: node tools/buat-data.js
 
 const fs = require('fs');
@@ -6,7 +6,20 @@ const path = require('path');
 
 const CSV_SPPT = path.join(__dirname, '..', 'data', 'sppt.csv');
 const CSV_STTS = path.join(__dirname, '..', 'data', 'stts.csv');
-const OUTPUT = path.join(__dirname, '..', 'data', 'data.js');
+const OUTPUT_JSON = path.join(__dirname, '..', 'data', 'arsip-data.json');
+const WILAYAH_TAMBAHAN = {
+  Cijeruk: [
+    'Cibalung',
+    'Cijeruk',
+    'Cipicung',
+    'Cipelang',
+    'Palasari',
+    'Sukaharja',
+    'Tajurhalang',
+    'Tanjungsari',
+    'Warung Menteng'
+  ]
+};
 
 // Parse CSV
 function parseCSV(content) {
@@ -27,13 +40,13 @@ function parseCSV(content) {
     headers.forEach((header, idx) => {
       const value = values[idx].trim();
       
-      if (header === 'tahun' || header.startsWith('buku')) {
-        const num = parseInt(value, 10);
-        if (isNaN(num)) {
+      if (header === 'tahun' || header.startsWith('buku') || header === 'jumlah') {
+        const num = Number(value);
+        if (!Number.isSafeInteger(num)) {
           console.error(`Baris ${i + 1}: ${header} harus angka (${value})`);
           return null;
         }
-        if (header.startsWith('buku') && num < 0) {
+        if ((header.startsWith('buku') || header === 'jumlah') && num < 0) {
           console.error(`Baris ${i + 1}: ${header} tidak boleh negatif`);
           return null;
         }
@@ -85,6 +98,13 @@ function extractWilayah(spptData, sttsData) {
     }
     wilayahMap[row.kecamatan].add(row.desa);
   });
+
+  Object.entries(WILAYAH_TAMBAHAN).forEach(([kecamatan, desaList]) => {
+    if (!wilayahMap[kecamatan]) {
+      wilayahMap[kecamatan] = new Set();
+    }
+    desaList.forEach(desa => wilayahMap[kecamatan].add(desa));
+  });
   
   // Sort kecamatan dan desa
   const wilayah = Object.keys(wilayahMap).sort().map(kecamatan => ({
@@ -122,7 +142,7 @@ try {
   
   console.log('\nValidasi data...');
   if (!checkDuplicates(spptData, 'SPPT') || !checkDuplicates(sttsData, 'STTS')) {
-    console.error('\n❌ Validasi gagal. File data.js tidak diperbarui.');
+    console.error('\n❌ Validasi gagal. File JSON tidak diperbarui.');
     process.exit(1);
   }
   
@@ -130,22 +150,16 @@ try {
   const wilayah = extractWilayah(spptData, sttsData);
   console.log(`  ${wilayah.length} kecamatan ditemukan`);
   
-  console.log('\nMembuat data.js...');
-  const output = `// data/data.js - Data utama arsip SPPT dan STTS
-// File ini di-generate otomatis oleh tools/buat-data.js
-// Jangan edit manual, edit file CSV lalu jalankan: node tools/buat-data.js
-
-window.ARSIP_DATA = ${JSON.stringify({ wilayah, sppt: spptData, stts: sttsData }, null, 2)};
-`;
-  
-  fs.writeFileSync(OUTPUT, output, 'utf8');
-  console.log(`✓ File data.js berhasil dibuat: ${OUTPUT}`);
+  console.log('\nMembuat data JSON...');
+  const appData = { wilayah, sppt: spptData, stts: sttsData };
+  fs.writeFileSync(OUTPUT_JSON, `${JSON.stringify(appData, null, 2)}\n`, 'utf8');
+  console.log(`✓ File data berhasil dibuat: ${OUTPUT_JSON}`);
   console.log(`\nRingkasan:`);
   console.log(`  - ${wilayah.length} kecamatan`);
   console.log(`  - ${wilayah.reduce((sum, w) => sum + w.desa.length, 0)} desa`);
   console.log(`  - ${spptData.length} record SPPT`);
   console.log(`  - ${sttsData.length} record STTS`);
-  console.log(`\n✅ Selesai! Buka index.html untuk melihat hasilnya.`);
+  console.log(`\n✅ Selesai! Jalankan npm run dev untuk melihat hasilnya.`);
   
 } catch (error) {
   console.error('\n❌ Error:', error.message);

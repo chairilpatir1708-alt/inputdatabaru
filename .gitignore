@@ -1,5 +1,7 @@
 # Local dependencies and generated files
 node_modules/
+.next/
+out/
 coverage/
 *.log
 *.tsbuildinfo
@@ -7,6 +9,7 @@ coverage/
 # Local environment and deployment settings
 .env
 .env.*
+!.env.example
 .vercel/
 
 # OS and editor files
