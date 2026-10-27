@@ -24,6 +24,7 @@ npx serve .
 1. Edit `data/sppt.csv` dan/atau `data/stts.csv`. Kolom harus tetap berurutan: `tahun,kecamatan,desa,buku1,buku2,buku3,buku4,buku5`.
 2. Pastikan kombinasi tahun, kecamatan, dan desa tidak duplikat; tahun harus 2000-2100; nilai buku harus bilangan bulat non-negatif.
    Rekap SPPT tanpa rincian buku disimpan terpisah di `data/sppt-tahunan-tanpa-rincian-buku.csv` dan tidak ditampilkan sebagai angka per buku.
+   Data Cijeruk untuk tahun 2016–2026 ditampilkan sebagai placeholder bernilai 0, bukan angka resmi.
 3. Buat ulang data browser dari folder utama proyek:
 
    ```bash

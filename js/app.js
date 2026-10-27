@@ -307,6 +307,8 @@
     // Render semua
     function render() {
         const filteredData = filterData();
+        const placeholderNotice = document.getElementById('cijeruk-placeholder');
+        placeholderNotice.hidden = currentFilters.kecamatan !== 'Cijeruk';
         updateCards(filteredData);
         updateTable(filteredData);
         updateHistory();

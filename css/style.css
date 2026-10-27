@@ -129,6 +129,16 @@ main {
     background: var(--paper);
 }
 
+.placeholder-notice {
+    margin: 14px 0;
+    padding: 12px 14px;
+    border: 1px solid #e8ca85;
+    border-radius: 7px;
+    background: #fff8e6;
+    color: #654b14;
+    font-size: 0.9rem;
+}
+
 .filter-group {
     display: flex;
     min-width: 0;

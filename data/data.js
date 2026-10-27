@@ -34,6 +34,20 @@ window.ARSIP_DATA = {
         "Tugu Jaya",
         "Wates Jaya"
       ]
+    },
+    {
+      "kecamatan": "Cijeruk",
+      "desa": [
+        "Cibalung",
+        "Cijeruk",
+        "Cipelang",
+        "Cipicung",
+        "Palasari",
+        "Sukaharja",
+        "Tajurhalang",
+        "Tanjungsari",
+        "Warung Menteng"
+      ]
     }
   ],
   "sppt": [
@@ -386,6 +400,996 @@ window.ARSIP_DATA = {
       "buku3": 0,
       "buku4": 0,
       "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
     }
   ],
   "stts": [
@@ -438,6 +1442,996 @@ window.ARSIP_DATA = {
       "buku3": 60,
       "buku4": 30,
       "buku5": 8
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2026,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2025,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2024,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2023,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2022,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2021,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2020,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2019,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2018,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2017,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Cibalung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Cijeruk",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipicung",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Cipelang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Palasari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Sukaharja",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Tajurhalang",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Tanjungsari",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
+    },
+    {
+      "tahun": 2016,
+      "kecamatan": "Cijeruk",
+      "desa": "Warung Menteng",
+      "buku1": 0,
+      "buku2": 0,
+      "buku3": 0,
+      "buku4": 0,
+      "buku5": 0
     }
   ]
 };
