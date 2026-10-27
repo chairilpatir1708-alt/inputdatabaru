@@ -1,8 +1,0 @@
-{
-  "name": "arsip-data-pbb",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "data:generate": "node tools/buat-data.js"
-  }
-}
