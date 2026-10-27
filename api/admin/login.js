@@ -12,7 +12,7 @@ const {
     verifyAdminPassword
 } = require('../../lib/admin-auth.cjs');
 
-module.exports = function login(req, res) {
+module.exports = async function login(req, res) {
     if (!requireMethod(req, res, 'POST')) return;
     if (!isSameOrigin(req)) {
         sendJson(res, 403, { error: 'Permintaan login tidak diizinkan.' });
@@ -25,10 +25,18 @@ module.exports = function login(req, res) {
 
     let body;
     try {
-        body = readJsonBody(req);
+        body = await readJsonBody(req);
     } catch (error) {
-        const tooLarge = error instanceof RangeError;
-        sendJson(res, tooLarge ? 413 : 400, { error: tooLarge ? 'Permintaan terlalu besar.' : 'Permintaan tidak valid.' });
+        if (error instanceof RangeError) {
+            sendJson(res, 413, { error: 'Permintaan terlalu besar.' });
+            return;
+        }
+        if (error instanceof SyntaxError || error instanceof TypeError) {
+            sendJson(res, 400, { error: 'Permintaan tidak valid.' });
+            return;
+        }
+        console.error('Gagal membaca permintaan login admin:', error);
+        sendJson(res, 500, { error: 'Permintaan login admin gagal diproses.' });
         return;
     }
 
