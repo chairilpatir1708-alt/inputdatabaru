@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#123b2c">
+    <title>Panel Admin - Arsip Data PBB</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23123b2c'/><path d='M8 24V9h4l4 6 4-6h4v15h-4v-9l-4 5-4-5v9z' fill='white'/></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-page">
+    <div class="admin-workspace">
+        <header class="admin-panel-header">
+            <div>
+                <a class="admin-back-link" href="index.html">← Lihat arsip</a>
+                <p class="eyebrow">AREA TERBATAS</p>
+                <h1>Panel Admin</h1>
+            </div>
+            <button id="logout-button" class="btn-reset" type="button">Keluar</button>
+        </header>
+
+        <main class="admin-panel-main">
+            <section class="admin-notice" role="note">
+                Perubahan di panel ini belum tersimpan ke situs. Unduh CSV, ganti file di folder <code>data/</code>,
+                jalankan <code>node tools/buat-data.js</code>, lalu commit dan push agar terbit di Vercel.
+            </section>
+
+            <section class="admin-editor-section">
+                <div class="admin-editor-heading">
+                    <div>
+                        <p class="section-kicker">DATA ARSIP</p>
+                        <h2>Kelola SPPT dan STTS</h2>
+                        <p class="section-description">Edit baris, tambahkan data, atau hapus baris sebelum mengunduh CSV.</p>
+                    </div>
+                    <div class="admin-editor-actions">
+                        <button id="add-row-button" class="btn-reset" type="button">Tambah baris</button>
+                        <button id="download-button" class="btn-export" type="button">Unduh CSV</button>
+                    </div>
+                </div>
+
+                <form id="filter-form" class="admin-filters">
+                    <div class="filter-group">
+                        <label for="dataset-select">Jenis data</label>
+                        <select id="dataset-select">
+                            <option value="sppt">SPPT</option>
+                            <option value="stts">STTS</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="year-filter">Tahun</label>
+                        <select id="year-filter">
+                            <option value="">Semua tahun</option>
+                        </select>
+                    </div>
+                    <div class="filter-group admin-search">
+                        <label for="search-filter">Cari wilayah</label>
+                        <input id="search-filter" type="search" placeholder="Kecamatan atau desa">
+                    </div>
+                    <button class="btn-reset" type="submit">Terapkan filter</button>
+                </form>
+
+                <p id="editor-status" class="admin-status" role="status" aria-live="polite"></p>
+                <div class="table-wrapper admin-table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Tahun</th>
+                                <th>Kecamatan</th>
+                                <th>Desa</th>
+                                <th>Buku 1</th>
+                                <th>Buku 2</th>
+                                <th>Buku 3</th>
+                                <th>Buku 4</th>
+                                <th>Buku 5</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="editor-tbody">
+                            <tr><td colspan="9" class="no-data">Memuat data...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="data/data.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

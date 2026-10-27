@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#123b2c">
+    <title>Login Admin - Arsip Data PBB</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23123b2c'/><path d='M8 24V9h4l4 6 4-6h4v15h-4v-9l-4 5-4-5v9z' fill='white'/></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-page">
+    <main class="admin-login-card">
+        <a class="admin-back-link" href="index.html">← Kembali ke arsip</a>
+        <p class="eyebrow">AREA TERBATAS</p>
+        <h1>Login Admin</h1>
+        <p class="section-description">Masuk untuk mengelola dan mengunduh data arsip.</p>
+        <form id="login-form" class="admin-login-form">
+            <label for="admin-password">Kata sandi admin</label>
+            <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+            <button class="btn-export" type="submit">Masuk</button>
+            <p id="login-status" class="admin-status" role="status" aria-live="polite"></p>
+        </form>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>

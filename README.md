@@ -43,9 +43,19 @@ npx serve .
 
 Tidak perlu build command atau custom domain. Pastikan repository bersifat publik jika menggunakan GitHub Pages gratis.
 
+## Login dan panel admin
+
+Ikon rumah di header membuka halaman login admin. Di Vercel, atur `ADMIN_PASSWORD` (minimal 12 karakter) dan `ADMIN_SESSION_SECRET` (minimal 32 byte) pada **Project Settings → Environment Variables** untuk environment Production. Buat nilai rahasia sesi secara lokal dengan:
+
+```bash
+node -e "console.log(require('node:crypto').randomBytes(32).toString('base64url'))"
+```
+
+Jangan masukkan nilai rahasia ke repository atau bagikan di chat. Setelah variabel disimpan, redeploy proyek. Panel admin mengedit data di browser dan mengunduh CSV; perubahan tidak langsung tersimpan ke situs. Ganti CSV terkait di `data/`, jalankan `node tools/buat-data.js`, lalu commit dan push agar Vercel menerbitkan data terbaru. Login admin memerlukan Vercel Functions sehingga tidak berfungsi di GitHub Pages.
+
 ## Deploy ke Vercel
 
-Impor repository ini di Vercel dan pilih konfigurasi **Other**. Biarkan Build Command, Output Directory, dan Install Command kosong; situs dilayani sebagai file statis dari folder utama. Tidak ada variabel lingkungan atau database yang diperlukan.
+Impor repository ini di Vercel dan pilih konfigurasi **Other**. Biarkan Build Command, Output Directory, dan Install Command kosong; halaman utama tetap dilayani sebagai file statis dan endpoint login admin berjalan sebagai Vercel Functions di folder `api/`.
 
 ## Struktur utama
 
@@ -55,6 +65,11 @@ stts.html        Halaman STTS
 css/style.css    Gaya dan tata letak
 js/app.js        Filter, ringkasan, dan tabel
 js/export.js     Unduh Excel
+login.html       Login admin tersembunyi dari navigasi utama
+admin.html       Editor admin dan unduh CSV
+api/admin/       Endpoint login, sesi, dan logout
+lib/admin-auth.cjs
+                 Verifikasi password dan sesi admin
 data/*.csv       Sumber data yang diedit
 data/data.js     Data browser hasil generate
 data/pemulihan-data.json
