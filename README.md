@@ -45,7 +45,7 @@ Tidak perlu build command atau custom domain. Pastikan repository bersifat publi
 
 ## Login dan panel admin
 
-Ikon rumah di header membuka halaman login admin. Di Vercel, atur `ADMIN_PASSWORD` (minimal 12 karakter) dan `ADMIN_SESSION_SECRET` (minimal 32 byte) pada **Project Settings → Environment Variables** untuk environment Production. Buat nilai rahasia sesi secara lokal dengan:
+Ikon rumah di header membuka halaman login admin dengan username dan kata sandi. Di Vercel, atur `ADMIN_USERNAME`, `ADMIN_PASSWORD` (minimal 12 karakter), dan `ADMIN_SESSION_SECRET` (minimal 32 byte) pada **Project Settings → Environment Variables** untuk environment Production. Buat nilai rahasia sesi secara lokal dengan:
 
 ```bash
 node -e "console.log(require('node:crypto').randomBytes(32).toString('base64url'))"

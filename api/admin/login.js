@@ -9,7 +9,7 @@ const {
     requireMethod,
     sendJson,
     sessionCookie,
-    verifyAdminPassword
+    verifyAdminCredentials
 } = require('../../lib/admin-auth.cjs');
 
 module.exports = async function login(req, res) {
@@ -40,14 +40,16 @@ module.exports = async function login(req, res) {
         return;
     }
 
-    if (typeof body.password !== 'string' || body.password.length > 1024) {
-        sendJson(res, 400, { error: 'Kata sandi tidak valid.' });
+    if (typeof body.username !== 'string' || body.username.trim().length === 0 ||
+        body.username.length > 256 || typeof body.password !== 'string' ||
+        body.password.length === 0 || body.password.length > 1024) {
+        sendJson(res, 400, { error: 'Username atau kata sandi tidak valid.' });
         return;
     }
 
     try {
-        if (!verifyAdminPassword(body.password)) {
-            sendJson(res, 401, { error: 'Kata sandi salah.' });
+        if (!verifyAdminCredentials(body.username.trim(), body.password)) {
+            sendJson(res, 401, { error: 'Username atau kata sandi salah.' });
             return;
         }
         sendJson(res, 200, { success: true }, {
