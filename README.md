@@ -1,59 +1,76 @@
 # Arsip Data PBB
 
-Aplikasi Next.js untuk melihat arsip SPPT dan STTS PBB.
+Website statis untuk melihat arsip SPPT dan STTS. Aplikasi berjalan langsung di browser, tanpa Next.js, database, atau proses build.
 
-## Menjalankan
+## Fitur
 
-```bash
-npm install
-npm run dev
-```
+- Filter tahun, kecamatan, desa, dan pencarian
+- Pilihan tahun 2016–2026 diurutkan dari tahun terlama
+- Ringkasan jumlah per kategori buku
+- Unduh data yang sedang difilter ke Excel
+- Riwayat data per tahun
+- Tampilan responsif untuk desktop dan ponsel
 
-Buka alamat lokal yang ditampilkan Next.js. Halaman tersedia di `/` (SPPT), `/stts` (STTS), `/login` (login admin), dan `/admin` (admin SPPT yang dilindungi login dan tidak ditautkan dari navigasi publik).
+## Menjalankan secara lokal
 
-## Login admin
-
-Salin `.env.example` menjadi `.env.local` (PowerShell: `Copy-Item .env.example .env.local`), lalu isi `ADMIN_PASSWORD` dengan kata sandi unik minimal 12 karakter dan `ADMIN_SESSION_SECRET` dengan rahasia acak minimal 32 byte. Buat rahasia sesi dengan:
-
-```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('base64url'))"
-```
-
-Jangan commit `.env.local` atau membagikan nilainya. Atur kedua environment variable yang sama pada pengaturan deployment. Sesi login disimpan dalam cookie HttpOnly, SameSite=Strict, dan berlaku 8 jam. Logout tersedia di halaman admin.
-
-## Mengelola data
-
-- SPPT: edit `data/sppt.csv` dengan kolom `tahun,kecamatan,desa,buku1,buku2,buku3,buku4,buku5`.
-- STTS: edit `data/stts.csv` dengan kolom `tahun,kecamatan,desa,jumlah`. STTS menampilkan jumlah tahunan per wilayah, tanpa kategori buku.
-- Pastikan kombinasi tahun, kecamatan, dan desa unik serta nilai hitung bilangan bulat non-negatif.
-- Data Cijeruk untuk semua desa tahun 2016–2026 saat ini bernilai 0 sebagai placeholder, bukan angka resmi. Ganti nilai di kedua CSV dengan data resmi saat tersedia.
-- Buat ulang data Next.js setelah mengubah CSV:
-
-  ```bash
-  npm run data:generate
-  ```
-
-  Generator menulis `data/arsip-data.json`, yang dipakai aplikasi.
-
-Halaman admin memerlukan login server-side. Perubahan data SPPT tetap tersimpan di penyimpanan lokal browser dan tidak memperbarui pengunjung lain secara otomatis. Untuk menerbitkan perubahan, unduh `sppt.csv` di halaman admin, ganti `data/sppt.csv`, jalankan generator, lalu build/deploy ulang.
-
-## Build dan deploy
+Buka `index.html` di browser untuk halaman SPPT, atau `stts.html` untuk halaman STTS. Untuk server lokal, jalankan:
 
 ```bash
-npm run build
+npx serve .
 ```
 
-Autentikasi memerlukan server Next.js yang berjalan, sehingga aplikasi ini tidak dapat menggunakan ekspor statis atau GitHub Pages. Deploy ke Vercel atau server Node.js dan atur environment variable login di pengaturan hosting.
+## Memperbarui data
 
-## Struktur
+1. Edit `data/sppt.csv` dan/atau `data/stts.csv`. Kolom harus tetap berurutan: `tahun,kecamatan,desa,buku1,buku2,buku3,buku4,buku5`.
+2. Pastikan kombinasi tahun, kecamatan, dan desa tidak duplikat; tahun harus 2000-2100; nilai buku harus bilangan bulat non-negatif.
+   Rekap SPPT tanpa rincian buku disimpan terpisah di `data/sppt-tahunan-tanpa-rincian-buku.csv` dan tidak ditampilkan sebagai angka per buku.
+3. Buat ulang data browser:
+
+   ```bash
+   npm run data:generate
+   ```
+
+   Atau tanpa npm:
+
+   ```bash
+   node tools/buat-data.js
+   ```
+
+4. Periksa hasilnya di `index.html` dan `stts.html`.
+
+## Deploy ke GitHub Pages
+
+1. Pastikan branch `main` berisi `index.html` di folder utama repository.
+2. Di GitHub, buka **Settings → Pages**.
+3. Pada **Build and deployment**, pilih **Deploy from a branch**.
+4. Pilih branch `main` dan folder `/(root)`, lalu klik **Save**.
+5. Setelah publikasi selesai, situs tersedia di `https://<nama-akun>.github.io/<nama-repo>/`. Halaman STTS ada di `/stts.html`.
+
+Tidak perlu build command atau custom domain. Pastikan repository bersifat publik jika menggunakan GitHub Pages gratis.
+
+## Deploy ke Vercel
+
+Impor repository ini di Vercel dan pilih konfigurasi **Other**. Biarkan Build Command, Output Directory, dan Install Command kosong; situs dilayani sebagai file statis dari folder utama. Tidak ada variabel lingkungan atau database yang diperlukan.
+
+## Struktur utama
 
 ```text
-app/                 Rute Next.js: SPPT, STTS, dan admin
-components/          Dashboard dan editor admin
-css/style.css        Gaya aplikasi
-data/*.csv           Sumber data
-data/arsip-data.json Data hasil generate untuk Next.js
-tools/buat-data.js   Generator JSON dari CSV
+index.html       Halaman SPPT
+stts.html        Halaman STTS
+css/style.css    Gaya dan tata letak
+js/app.js        Filter, ringkasan, dan tabel
+js/export.js     Unduh Excel
+data/*.csv       Sumber data yang diedit
+data/data.js     Data browser hasil generate
+data/pemulihan-data.json
+                 Snapshot JSON untuk pemulihan data
+tools/buat-data.js
+                 Generator data.js dari CSV
 ```
 
-Data dalam `data/` dipublikasikan bersama situs. Jangan masukkan informasi rahasia atau data pribadi yang tidak boleh dibagikan.
+`data/pemulihan-data.json` berisi snapshot data aplikasi SPPT/STTS, rekap tahunan tanpa rincian buku, dan rekap gabungan sementara. Perbarui snapshot ini setelah mengubah sumber data jika diperlukan untuk pemulihan terbaru.
+
+## Catatan data
+
+Konten di `data/` akan tersedia untuk pengunjung situs. Jangan masukkan informasi rahasia atau data pribadi yang tidak boleh dipublikasikan. Fitur unduh Excel memuat ExcelJS dari CDN dan membutuhkan koneksi internet.
+Pilihan tahun selalu menampilkan 2016–2026. Tabel hanya menampilkan tahun yang memiliki data di CSV; tahun tanpa data tidak diberi angka rekaan.

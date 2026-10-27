@@ -33,20 +33,6 @@
           "Tugu Jaya",
           "Wates Jaya"
         ]
-      },
-      {
-        "kecamatan": "Cijeruk",
-        "desa": [
-          "Cibalung",
-          "Cijeruk",
-          "Cipelang",
-          "Cipicung",
-          "Palasari",
-          "Sukaharja",
-          "Tajurhalang",
-          "Tanjungsari",
-          "Warung Menteng"
-        ]
       }
     ],
     "sppt": [
@@ -406,31 +392,51 @@
         "tahun": 2026,
         "kecamatan": "Caringin",
         "desa": "Caringin",
-        "jumlah": 318
+        "buku1": 120,
+        "buku2": 95,
+        "buku3": 65,
+        "buku4": 30,
+        "buku5": 8
       },
       {
         "tahun": 2026,
         "kecamatan": "Caringin",
         "desa": "Ciderum",
-        "jumlah": 387
+        "buku1": 145,
+        "buku2": 115,
+        "buku3": 75,
+        "buku4": 40,
+        "buku5": 12
       },
       {
         "tahun": 2025,
         "kecamatan": "Caringin",
         "desa": "Caringin",
-        "jumlah": 303
+        "buku1": 115,
+        "buku2": 90,
+        "buku3": 63,
+        "buku4": 28,
+        "buku5": 7
       },
       {
         "tahun": 2016,
         "kecamatan": "Caringin",
         "desa": "Caringin",
-        "jumlah": 250
+        "buku1": 100,
+        "buku2": 75,
+        "buku3": 50,
+        "buku4": 20,
+        "buku5": 5
       },
       {
         "tahun": 2016,
         "kecamatan": "Caringin",
         "desa": "Cimande",
-        "jumlah": 308
+        "buku1": 120,
+        "buku2": 90,
+        "buku3": 60,
+        "buku4": 30,
+        "buku5": 8
       }
     ]
   },
