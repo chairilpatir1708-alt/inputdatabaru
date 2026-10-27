@@ -24,13 +24,7 @@ npx serve .
 1. Edit `data/sppt.csv` dan/atau `data/stts.csv`. Kolom harus tetap berurutan: `tahun,kecamatan,desa,buku1,buku2,buku3,buku4,buku5`.
 2. Pastikan kombinasi tahun, kecamatan, dan desa tidak duplikat; tahun harus 2000-2100; nilai buku harus bilangan bulat non-negatif.
    Rekap SPPT tanpa rincian buku disimpan terpisah di `data/sppt-tahunan-tanpa-rincian-buku.csv` dan tidak ditampilkan sebagai angka per buku.
-3. Buat ulang data browser:
-
-   ```bash
-   npm run data:generate
-   ```
-
-   Atau tanpa npm:
+3. Buat ulang data browser dari folder utama proyek:
 
    ```bash
    node tools/buat-data.js
